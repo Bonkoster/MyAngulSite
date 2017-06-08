@@ -14,11 +14,11 @@ angular.module('invoice', [])
     ]
     
     $scope.img = [
-        {image: "app/images/angular.png", conte: "asdasdasd" },
-        {image: "app/images/css.png", conte: "asdasdasdsad" },
-        {image: "app/images/htm.png", conte: "asdasdasdzxc" },
-        {image: "app/images/javasc.png", conte: "asdasdasdgfdfg" },
-        {image: "app/images/jq.png", conte: "asdasdasdxcvxzxvcb" }
+        {image: "images/angular.png", conte: "asdasdasd" },
+        {image: "images/css.png", conte: "asdasdasdsad" },
+        {image: "images/htm.png", conte: "asdasdasdzxc" },
+        {image: "images/javasc.png", conte: "asdasdasdgfdfg" },
+        {image: "images/jq.png", conte: "asdasdasdxcvxzxvcb" }
     ]
     
 }])
