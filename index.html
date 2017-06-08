@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Main page</title>        
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="bower_components/a-slider/aslider.js"></script>
+        <script type="text/javascript" src="assets/js/invoice1.js"></script>
+        <script type="text/javascript" src="assets/js/slide.js" ></script>
+        <link rel="stylesheet" href="assets/css/main.css" >
+    </head>
+    <body ng-app="invoice" ng-controller="InvoiceController as invoice" >
+        <header class="tabs">
+           <img class="im" src="images/heade.png" height="50px" > <laber class="logo" > Личный сайт </laber>
+            <label class=" as">Владимира Лучникова</label>
+            <ul class="taber" ng-repeat="t in tabs">
+                <a href="#">{{t.name}}</a>
+            </ul> 
+        </header>
+        <div id="pos" class="slid">
+       <div class="aslider" data-hide-controls>
+        <div class="aslide" ng-repeat="im in img" data-duration=5 >
+            <img ng-src="{{im.image}}" > <label class="asmod">{{im.conte}}</label>
+           </div>
+        </div>
+        </div>
+        <footer class="bot" >
+            <ul ng-repeat="f in fot" >
+                <label >{{f.name}}</label> 
+            </ul>
+        </footer>
+    </body>
+</html>
