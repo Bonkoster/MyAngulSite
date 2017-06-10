@@ -37,8 +37,14 @@
     bottom: 10px;
 }
 
+.immod, .asmod {
+    float: left;
+    
+}
+
 .asmod {
-    font-family: "Roboto"
+    font-family: "Roboto";
+    padding-left: 50px;
 }
 
 .logo {
@@ -71,10 +77,13 @@ a {
 ul a:hover {
     background-color: antiquewhite;
     color: #6f6f6f;
+    border-bottom: 1px solid;
+    border-bottom-color: red;
+    
 }
 
 ul a{
-    line-height: 70px;
+    line-height: 68px;
     color: white;
     text-decoration: none;
     margin: 0;
@@ -91,3 +100,7 @@ ul img {
     top: 150px;
 }
 
+h1 {
+    color: #da4646;
+    font-family: "Oswald";
+}

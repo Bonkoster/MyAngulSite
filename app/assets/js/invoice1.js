@@ -2,8 +2,8 @@ angular.module('invoice', [])
 .controller('InvoiceController',['$scope','Restor', function($scope,Restor) {  
 
     $scope.tabs = [
-        {name: "Технологии"},
         {name: "Контакты"},
+        {name: "Технологии"},     
         {name: "Примеры работ"},
         {name: "Обо мне"}
     ]
@@ -14,11 +14,11 @@ angular.module('invoice', [])
     ]
     
     $scope.img = [
-        {image: "images/angular.png", conte: "asdasdasd" },
-        {image: "images/css.png", conte: "asdasdasdsad" },
-        {image: "images/htm.png", conte: "asdasdasdzxc" },
-        {image: "images/javasc.png", conte: "asdasdasdgfdfg" },
-        {image: "images/jq.png", conte: "asdasdasdxcvxzxvcb" }
+        {image: "images/angular.png", name:"AngularJS", conte: "asdasdasd" },
+        {image: "images/css.png", name:"CSS3", conte: "asdasdasdsad" },
+        {image: "images/htm.png", name:"HTML5", conte: "asdasdasdzxc" },
+        {image: "images/javasc.png", name:"JavaScript", conte: "asdasdasdgfdfg" },
+        {image: "images/jq.png", name:"JQuery", conte: "asdasdasdxcvxzxvcb" }
     ]
     
 }])

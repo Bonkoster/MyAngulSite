@@ -19,7 +19,12 @@
         <div id="pos" class="slid">
        <div class="aslider" data-hide-controls>
         <div class="aslide" ng-repeat="im in img" data-duration=5 >
-            <img ng-src="{{im.image}}" > <label class="asmod">{{im.conte}}</label>
+            <img class="immod" ng-src="{{im.image}}" >
+            <div class="asmod">
+                <h1>{{im.name}}</h1>
+                <br>
+                <label >{{im.conte}}</label>
+            </div>
            </div>
         </div>
         </div>
