@@ -37,6 +37,11 @@
     bottom: 10px;
 }
 
+.aslider {
+    left: 100px !important ;
+    width: 1100px;
+}
+
 .immod, .asmod {
     float: left;
     
@@ -45,6 +50,8 @@
 .asmod {
     font-family: "Roboto";
     padding-left: 50px;
+    width: 750px;
+    word-break: break-all;
 }
 
 .logo {

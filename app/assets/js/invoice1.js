@@ -13,12 +13,22 @@ angular.module('invoice', [])
         {name: "Владимир Лучников 2017"}
     ]
     
+    this.a = "AngularJS — JavaScript-фреймворк с открытым исходным кодом. Предназначен для разработки одностраничных приложений. Его цель — расширение браузерных приложений на основе MVC-шаблона, а также упрощение тестирования и разработки."
+    
+    this.b = "HTML  — стандартизированный язык разметки документов во Всемирной паутине. Большинство веб-страниц содержат описание разметки на языке HTML (или XHTML). Язык HTML интерпретируется браузерами; полученный в результате интерпретации форматированный текст отображается на экране монитора компьютера или мобильного устройства."
+    
+    this.c = "CSS  — формальный язык описания внешнего вида документа, написанного с использованием языка разметки. Преимущественно используется как средство описания, оформления внешнего вида веб-страниц, написанных с помощью языков разметки HTML и XHTML, но может также применяться к любым XML-документам, например, к SVG или XUL."
+    
+    this.j = "ориентированный, императивный и функциональный стили. Является реализацией языка ECMAScript .JavaScript обычно используется как встраиваемый язык для программного доступа к объектам приложений. Наиболее широкое применение находит в браузерах как язык сценариев для придания интерактивности веб-страницам."
+    
+    this.q = "jQuery — библиотека JavaScript, фокусирующаяся на взаимодействии JavaScript и HTML. Библиотека jQuery помогает легко получать доступ к любому элементу DOM, обращаться к атрибутам и содержимому элементов DOM, манипулировать ими. Также библиотека jQuery предоставляет удобный API для работы с AJAX. Сейчас разработка jQuery ведётся командой jQuery во главе с Джоном Резигом."
+    
     $scope.img = [
-        {image: "images/angular.png", name:"AngularJS", conte: "asdasdasd" },
-        {image: "images/css.png", name:"CSS3", conte: "asdasdasdsad" },
-        {image: "images/htm.png", name:"HTML5", conte: "asdasdasdzxc" },
-        {image: "images/javasc.png", name:"JavaScript", conte: "asdasdasdgfdfg" },
-        {image: "images/jq.png", name:"JQuery", conte: "asdasdasdxcvxzxvcb" }
+        {image: "images/angular.png", name:"AngularJS", conte: this.a },
+        {image: "images/css.png", name:"CSS3", conte: this.c },
+        {image: "images/htm.png", name:"HTML5", conte: this.b },
+        {image: "images/javasc.png", name:"JavaScript", conte: this.j },
+        {image: "images/jq.png", name:"JQuery", conte: this.q }
     ]
     
 }])
