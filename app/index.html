@@ -14,10 +14,16 @@
            <img class="im" src="images/heade.png" height="50px" > <laber class="logo" > Личный сайт </laber>
             <label class=" as">Владимира Лучникова</label>
             <ul class="taber" ng-repeat="t in tabs">
-                <a href="#">{{t.name}}</a>
+                <a href="#" ng-click="toPath()" >{{t.name}}</a>
             </ul> 
         </header>
-        <div id="pos" class="slid">
+        <div id="about" class="about">
+            <h1>{{about}}</h1>   
+            <div ng-repeat="tem in aboutstr" class="te">
+              <label>{{tem.textmy}}</label>
+            </div>
+        </div>
+        <div id="tech" class="slid">
        <div class="aslider" data-hide-controls>
         <div class="aslide" ng-repeat="im in img" data-duration=5 >
             <img class="immod" ng-src="{{im.image}}" >
@@ -28,6 +34,8 @@
             </div>
            </div>
         </div>
+        </div>
+        <div class="contact" >
         </div>
         <footer class="bot" >
             <ul ng-repeat="f in fot" >
