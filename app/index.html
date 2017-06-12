@@ -8,6 +8,7 @@
         <script type="text/javascript" src="assets/js/slide.js" ></script>
         <link rel="icon" href="images/fave.png" type="image/png" >
         <link rel="stylesheet" href="assets/css/main.css" >
+        <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
     </head>
     <body ng-app="invoice" ng-controller="InvoiceController as invoice" >
         <header class="tabs">
@@ -18,12 +19,21 @@
             </ul> 
         </header>
         <div id="about" class="about">
-            <h1>{{about}}</h1>   
+            <div class="aboutbody">
+            <h1 id="abohead">{{about}}</h1>   
             <div ng-repeat="tem in aboutstr" class="te">
-              <label>{{tem.textmy}}</label>
+              <p>{{tem.textmy}}</p>
+            </div>
+            </div>
+        </div>
+        <div class="works">
+            <h1>{{work}}</h1>
+            <div class="contmain" ng-repeat="wo in worksed">
+                <a class="lind" href="{{wo.lik}}">{{wo.myList}}</a>
             </div>
         </div>
         <div id="tech" class="slid">
+            <h1>{{tech}}</h1>
        <div class="aslider" data-hide-controls>
         <div class="aslide" ng-repeat="im in img" data-duration=5 >
             <img class="immod" ng-src="{{im.image}}" >
@@ -35,7 +45,11 @@
            </div>
         </div>
         </div>
-        <div class="contact" >
+        <div class="contact">
+            <h1>{{cont}}</h1>
+            <div class="contmain" ng-repeat="lin in myLiks">
+                <p><i class="{{lin.ico}}"></i> <a href="{{lin.hre}}" class="lind">{{lin.val}}</a></p>
+            </div>
         </div>
         <footer class="bot" >
             <ul ng-repeat="f in fot" >

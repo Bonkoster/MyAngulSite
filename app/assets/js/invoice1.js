@@ -1,14 +1,6 @@
 var app = angular.module('invoice', []);
 
 app.controller('InvoiceController',['$scope','$location','$anchorScroll',function($scope,$location,$anchorScroll,Rector) {  
-
-    $scope.toPath = function() {
-        
-        
-        $location.hash('#tech');
-        
-        $anchorScroll();
-    };
     
     $scope.tabs = [
         {name: "Контакты"},
@@ -23,11 +15,29 @@ app.controller('InvoiceController',['$scope','$location','$anchorScroll',functio
     ];
     
     $scope.about = "Обо мне";
-    $scope.tech = "Технологии";
+    $scope.tech = "Технологии использованные при разработке данного сайта";
+    $scope.cont = "Контакты";
+    $scope.work = "Работы";
     
     $scope.aboutstr = [
-      {textmy: "Приветстую на моей личной странице"  }
+      {textmy: "С 2013 по 2016 учился в Санкт-Петербургском техническом колледже управления и коммерции(ТКУиК) по специальности Информационная безопасность автоматизированных систем.Защитил красный диплом. Тема дипломного проекта - Программные уязвимости и просчеты серверной части WEB приложений. В дальнейшем планирую поступить в высшее учебное заведение(ГУАП или ПолиТех)."  },
+        {textmy: "Личные качества: спокойствие, умеренность, настойчивость."},
+        {textmy: "В свободное время читаю компьютерную литературу, любимые авторы - Герберт Шилдт и дуэт Хорстманна-Корнелла. На данный момент читаю Стива Макконела - совершенный код. "},
+        {textmy: "Более года работаю с Java,пользовался такими WEB-технологиями как JSF,GWT,Tapestry. Для работы с базами данных в моих проектах используются MySQL, JDBCtemplate при подключении обычного SQL, или Hibernate при работе с ORM. В качестве дополнительного языка в WEB приложениях я использую JavaScript и библиотеку jQuery."}
     ];  
+    
+    $scope.myLiks = [
+        {ico: "fa fa-google-plus", val: "shram3214@gmail.com", hre: "mailto:email-to@gmail.com"  },
+        {ico: "fa fa-vk", val: "vk.com/lukashman", hre: "https://vk.com/lukashman" },
+        {ico: "fa fa-github", val: "github.com/Lukashman" , hre: "https://github.com/Lukashman" },
+        {ico: "fa fa-user", val: "HeadHunter" , hre: "https://spb.hh.ru/resume/3a058bd8ff0378053d0039ed1f6970346f6e4c" }
+    ];
+    
+    $scope.worksed = [
+        {myList: "Маленький чатик", lik: "https://chatrails.herokuapp.com"},
+        {myList: "Крестики нолики", lik: "https://github.com/Lukashman/TicTacToe"},
+        {myList: "Программа для записок", lik: "https://github.com/Lukashman/To-do-list"}
+    ];
     
     this.a = "AngularJS — JavaScript-фреймворк с открытым исходным кодом. Предназначен для разработки одностраничных приложений. Его цель — расширение браузерных приложений на основе MVC-шаблона, а также упрощение тестирования и разработки.";
     
@@ -45,5 +55,5 @@ app.controller('InvoiceController',['$scope','$location','$anchorScroll',functio
         {image: "images/htm.png", name:"HTML5", conte: this.b },
         {image: "images/javasc.png", name:"JavaScript", conte: this.j },
         {image: "images/jq.png", name:"JQuery", conte: this.q }
-    ] 
-}])
+    ];
+}]);
