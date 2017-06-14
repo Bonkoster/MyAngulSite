@@ -3,10 +3,10 @@ var app = angular.module('invoice', []);
 app.controller('InvoiceController',['$scope','$location','$anchorScroll',function($scope,$location,$anchorScroll,Rector) {  
     
     $scope.tabs = [
-        {name: "Контакты"},
-        {name: "Технологии"},     
-        {name: "Примеры работ"},
-        {name: "Обо мне"}
+        {name: "Контакты", id: "contact"},
+        {name: "Технологии", id: "tech"},     
+        {name: "Примеры работ", id: "works"},
+        {name: "Обо мне", id: "about"}
     ];
     
     $scope.fot = [

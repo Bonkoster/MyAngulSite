@@ -3,6 +3,7 @@
         <title>Владимир Лучников | Личный сайт</title>        
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.rawgit.com/kswedberg/jquery-smooth-scroll/master/jquery.smooth-scroll.js"></script>
         <script type="text/javascript" src="bower_components/a-slider/aslider.js"></script>
         <script type="text/javascript" src="assets/js/invoice1.js"></script>
         <script type="text/javascript" src="assets/js/slide.js" ></script>
@@ -15,7 +16,7 @@
            <img class="im" src="images/heade.png" height="50px" > <laber class="logo" > Личный сайт </laber>
             <label class=" as">Владимира Лучникова</label>
             <ul class="taber" ng-repeat="t in tabs">
-                <a href="#" ng-click="toPath()" >{{t.name}}</a>
+                <a href="#{{t.id}}" >{{t.name}}</a>
             </ul> 
         </header>
         <div id="about" class="about">
@@ -26,7 +27,7 @@
             </div>
             </div>
         </div>
-        <div class="works">
+        <div id="works" class="works">
             <h1>{{work}}</h1>
             <div class="contmain" ng-repeat="wo in worksed">
                 <a class="lind" href="{{wo.lik}}">{{wo.myList}}</a>
@@ -45,7 +46,7 @@
            </div>
         </div>
         </div>
-        <div class="contact">
+        <div id="contact" class="contact">
             <h1>{{cont}}</h1>
             <div class="contmain" ng-repeat="lin in myLiks">
                 <p><i class="{{lin.ico}}"></i> <a href="{{lin.hre}}" class="lind">{{lin.val}}</a></p>
