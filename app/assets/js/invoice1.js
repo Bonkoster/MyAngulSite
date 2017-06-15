@@ -34,10 +34,11 @@ app.controller('InvoiceController',['$scope','$location','$anchorScroll',functio
     ];
     
     $scope.worksed = [
-        {myList: "Маленький чатик", lik: "https://chatrails.herokuapp.com"},
-        {myList: "Крестики нолики", lik: "https://github.com/Lukashman/TicTacToe"},
-        {myList: "Программа для записок", lik: "https://github.com/Lukashman/To-do-list"}
+        {myList: "Маленький чатик", lik: "https://chatrails.herokuapp.com", img: "images/test.png"},
+        {myList: "Крестики нолики", lik: "https://github.com/Lukashman/TicTacToe", img: "images/ttt.png"},
+        {myList: "Программа для записок", lik: "https://github.com/Lukashman/To-do-list", img: "https://spb.hh.ru/photo/488863068.png?t=1497631539&h=YBxsYfC1lpnJpQVmpfar3g"}
     ];
+    
     
     this.a = "AngularJS — JavaScript-фреймворк с открытым исходным кодом. Предназначен для разработки одностраничных приложений. Его цель — расширение браузерных приложений на основе MVC-шаблона, а также упрощение тестирования и разработки.";
     

@@ -135,7 +135,7 @@ ul a:hover {
     
 }
 
-ul a{
+.taber > a{
     line-height: 68px;
     color: white;
     text-decoration: none;
@@ -152,6 +152,10 @@ ul img {
     text-decoration: none;
     font-family: "Roboto";
     color: #da4646;
+}
+
+.lind:hover {
+    color: white;
 }
 
 h1 {
@@ -174,4 +178,14 @@ h1 {
     text-align: center;
 }
 
+.workd {
+    align-content: center;
+    text-align: center;
+    padding-left: 70px;
+}
 
+/*Patches*/
+
+.scroll {
+    
+}

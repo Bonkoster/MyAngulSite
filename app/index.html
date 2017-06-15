@@ -19,7 +19,7 @@
                 <a href="#{{t.id}}" >{{t.name}}</a>
             </ul> 
         </header>
-        <div id="about" class="about">
+        <div id="about" class="about scroll">
             <div class="aboutbody">
             <h1 id="abohead">{{about}}</h1>   
             <div ng-repeat="tem in aboutstr" class="te">
@@ -27,13 +27,18 @@
             </div>
             </div>
         </div>
-        <div id="works" class="works">
+        <div id="works" class="works scroll">
             <h1>{{work}}</h1>
-            <div class="contmain" ng-repeat="wo in worksed">
-                <a class="lind" href="{{wo.lik}}">{{wo.myList}}</a>
-            </div>
+            <table class="workd">
+                <tr>
+                    <td ng-repeat="wor in worksed"> <a class="lind" href="{{wor.lik}}">{{wor.myList}}</a></td>                  
+                </tr>
+                <tr>
+                    <td  ng-repeat="wor in worksed"> <img width="400px" height="300px" src="{{wor.img}}" > </td>
+                </tr>
+            </table>
         </div>
-        <div id="tech" class="slid">
+        <div id="tech" class="slid scroll">
             <h1>{{tech}}</h1>
        <div class="aslider" data-hide-controls>
         <div class="aslide" ng-repeat="im in img" data-duration=5 >
@@ -46,7 +51,7 @@
            </div>
         </div>
         </div>
-        <div id="contact" class="contact">
+        <div id="contact" class="contact scroll">
             <h1>{{cont}}</h1>
             <div class="contmain" ng-repeat="lin in myLiks">
                 <p><i class="{{lin.ico}}"></i> <a href="{{lin.hre}}" class="lind">{{lin.val}}</a></p>
