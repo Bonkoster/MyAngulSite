@@ -17,7 +17,7 @@ app.controller('InvoiceController',['$scope','$location','$anchorScroll',functio
     $scope.about = "Обо мне";
     $scope.tech = "Технологии использованные при разработке данного сайта";
     $scope.cont = "Контакты";
-    $scope.work = "Работы";
+    $scope.work = "Выполненные проекты";
     
     $scope.aboutstr = [
       {textmy: "С 2013 по 2016 учился в Санкт-Петербургском техническом колледже управления и коммерции(ТКУиК) по специальности Информационная безопасность автоматизированных систем.Защитил красный диплом. Тема дипломного проекта - Программные уязвимости и просчеты серверной части WEB приложений. В дальнейшем планирую поступить в высшее учебное заведение(ГУАП или ПолиТех)."  },
@@ -36,7 +36,7 @@ app.controller('InvoiceController',['$scope','$location','$anchorScroll',functio
     $scope.worksed = [
         {myList: "Маленький чатик", lik: "https://chatrails.herokuapp.com", img: "images/test.png"},
         {myList: "Крестики нолики", lik: "https://github.com/Lukashman/TicTacToe", img: "images/ttt.png"},
-        {myList: "Программа для записок", lik: "https://github.com/Lukashman/To-do-list", img: "https://spb.hh.ru/photo/488863068.png?t=1497631539&h=YBxsYfC1lpnJpQVmpfar3g"}
+        {myList: "Программа для записок", lik: "https://github.com/Lukashman/To-do-list", img: "images/zap.png"}
     ];
     
     
