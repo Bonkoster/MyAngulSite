@@ -103,7 +103,7 @@ footer {
 }
 
 .contact {
-    height: 400px;
+    height: 300px;
     top: -100px;
 }
 
@@ -112,9 +112,15 @@ footer {
 }
 
 .contmain {
-    width: 600px;
-    padding-left: 100px;
+    width: 100%;
+
+    text-align: center;
     
+}
+
+code {
+    display: inline-block;
+    padding-right: 50px;
 }
 
 .aboutbody {
@@ -164,6 +170,10 @@ h1 {
     padding-top: 40px;
     padding-left: 50%;
     
+}
+
+.contes {
+    padding-left: 640px;
 }
 
 .slid > h1 {
