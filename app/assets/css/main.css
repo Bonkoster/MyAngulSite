@@ -4,7 +4,7 @@
 /* logo,header and slider*/
 .tabs {
     background: linear-gradient(to bottom, #d60407 39%,#6d0019 84%);
-    width: 101%;
+    width: 100.5%;
     height: 70px;
     margin: 0;
     padding: 0;
@@ -17,7 +17,7 @@
 
 .bot {
     background: linear-gradient(to bottom, #895c5d 0%,#380a0d 97%,#3f2d2e 100%);
-    width: 101%;
+    width: 100.5%;
     height: 80px;
     bottom: 0px;
     position: fixed;
@@ -87,7 +87,7 @@ footer {
 
 /* main block */
 .slid, .about, .contact, .works {
-    width: 102%;
+    width: 101.6%;
     height: 600px;
     left: 20px;
     margin-left: -1%;
